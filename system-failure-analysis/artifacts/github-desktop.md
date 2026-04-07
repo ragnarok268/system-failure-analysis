@@ -1,28 +1,51 @@
 # GitHub Desktop — Time / Async State Failure
 
 ## Summary
-Stale async results overwrote current system state.
+Outdated asynchronous results were allowed to overwrite current system state.
 
 ## Failure Class
 Time / Async State Failure
 
 ## Why It Matters
-Leads to incorrect UI or system state based on outdated operations.
+Leads to:
+
+- incorrect UI state
+- loss of user actions
+- inconsistent system behavior under concurrent operations
 
 ## Symptom
-Earlier async responses overwrite newer user actions.
+Earlier async operations complete after newer ones and overwrite the current state.
 
 ## Root Cause
-No protection against stale async resolution overwriting current state.
+The system does not enforce ordering or freshness when resolving asynchronous operations.
+
+Specifically:
+- async results are applied without validation of relevance
+- no mechanism exists to reject stale responses
+- state updates are not tied to request lifecycle
 
 ## Fix Summary
-Introduced guard to ignore outdated async results.
+Introduced safeguards against stale async updates:
+
+- track request identity or version
+- apply updates only if they match current state context
+- ignore outdated async responses
 
 ## Verification
-Confirmed correct state preservation under concurrent operations.
+- confirmed that newer actions are preserved over older async completions
+- validated correct state behavior under concurrent operations
+- ensured stale results no longer overwrite current state
 
 ## Pattern
-Async systems fail when resolution order is not enforced against state freshness.
+Async systems frequently fail when result application is not tied to state freshness.
+
+Common issue:
+- treating all async completions as equally valid
+
+Correct approach:
+- enforce ordering or relevance checks before applying results
 
 ## Evidence
-Upstream repo and fix patch included.
+- Upstream repository: https://github.com/desktop/desktop
+- Affected area: async state handling
+- Issue type: stale async overwrite
