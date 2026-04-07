@@ -7,22 +7,40 @@ Frontend validation incorrectly reported missing credentials despite successful 
 UI Truth Failure
 
 ## Why It Matters
-Creates false operator warnings and reduces trust in system feedback.
+This creates false operator warnings, reduces trust in system feedback, and can lead users to misdiagnose working workflows as broken.
 
 ## Symptom
-UI displays credential error while workflow executes successfully.
+The UI reports that credentials are not set or unusable, while the workflow executes successfully using valid authentication.
 
 ## Root Cause
-Validation logic inferred unusable state without accounting for valid credential paths.
+The validation layer determines credential usability based on selected credential presence rather than actual execution capability.
+
+Specifically:
+- validation checks for credential selection state
+- does not account for valid predefined credential flows
+- results in UI state diverging from execution truth
 
 ## Fix Summary
-Adjusted validation logic to reflect actual execution truth instead of incomplete UI assumptions.
+Adjusted validation logic to align with execution truth:
+
+- treat valid predefined credential paths as usable
+- avoid flagging credentials as invalid when execution succeeds
+- ensure UI reflects actual system capability rather than incomplete validation assumptions
 
 ## Verification
-Confirmed successful execution paths with corrected validation state.
+- confirmed workflows execute successfully with valid credentials
+- verified UI state now reflects actual execution behavior
+- ensured no false warnings are produced under valid conditions
 
 ## Pattern
-UI layers often enforce stricter or incorrect truth conditions compared to execution logic.
+UI validation layers often enforce incorrect or stricter truth conditions than the execution layer.
+
+This leads to:
+- false error states
+- user confusion
+- reduced trust in system feedback
 
 ## Evidence
-Upstream repo and fix patch included.
+- Upstream repository: https://github.com/n8n-io/n8n
+- Affected area: frontend validation logic
+- Fix: adjusted credential usability evaluation
