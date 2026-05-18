@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const root = path.resolve(__dirname, '..');
+const publicRoot = 'job_artifact';
 const receiptsDir = path.join(root, 'receipts');
 const reportPath = path.join(receiptsDir, 'validation_report.json');
 
@@ -84,11 +85,11 @@ for (const slug of cases) {
 
 const pass = missing.length === 0 && emptyMarkdown.length === 0;
 const report = {
-  root,
+  root: publicRoot,
   checkedCount: checked.length,
   pass,
-  missing,
-  emptyMarkdown
+  missing: missing.map((target) => path.relative(root, target).replace(/\\/g, '/')),
+  emptyMarkdown: emptyMarkdown.map((target) => path.relative(root, target).replace(/\\/g, '/'))
 };
 
 fs.mkdirSync(receiptsDir, { recursive: true });

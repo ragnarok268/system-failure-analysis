@@ -1,12 +1,12 @@
 {
   "caseSlug": "langflow",
   "system": "Langflow",
-  "sourceSummary": "C:/Users/Brandon Caylor/system-failure-analysis/artifacts/langflow.md",
+  "sourceSummary": "artifacts/langflow.md",
   "verificationStatus": "Medium",
   "evidenceAvailable": [
     "summary markdown",
-    "patch diff: C:/Users/Brandon Caylor/langflow/langflow_fix.diff",
-    "focused code excerpt: C:/Users/Brandon Caylor/langflow/langflow_fix_zone.txt"
+    "patch diff: job_artifact/recovered_evidence/langflow/langflow_fix.diff",
+    "focused code excerpt: job_artifact/recovered_evidence/langflow/langflow_fix_zone.txt"
   ],
   "recoveredDirectEvidence": [
     "A clean local patch diff exists for src/backend/base/pyproject.toml.",
@@ -24,8 +24,8 @@
   ],
   "recoveredArtifacts": [
     {
-      "path": "C:/Users/Brandon Caylor/langflow/langflow_fix.diff",
-      "copiedTo": "C:/Users/Brandon Caylor/system-failure-analysis/job_artifact/recovered_evidence/langflow/langflow_fix.diff",
+      "path": "[local path redacted - recovered artifact copied into repo]",
+      "copiedTo": "job_artifact/recovered_evidence/langflow/langflow_fix.diff",
       "artifactType": "patch diff",
       "confidence": "high",
       "upgrades": [
@@ -36,8 +36,8 @@
       "summary": "Direct diff in src/backend/base/pyproject.toml raising the chromadb lower bound from 1.0.0 to 1.4.1."
     },
     {
-      "path": "C:/Users/Brandon Caylor/langflow/langflow_fix_zone.txt",
-      "copiedTo": "C:/Users/Brandon Caylor/system-failure-analysis/job_artifact/recovered_evidence/langflow/langflow_fix_zone.txt",
+      "path": "[local path redacted - recovered artifact copied into repo]",
+      "copiedTo": "job_artifact/recovered_evidence/langflow/langflow_fix_zone.txt",
       "artifactType": "focused code excerpt",
       "confidence": "high",
       "upgrades": [

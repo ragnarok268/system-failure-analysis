@@ -1,14 +1,14 @@
 {
   "caseSlug": "github-desktop",
   "system": "GitHub Desktop",
-  "sourceSummary": "C:/Users/Brandon Caylor/system-failure-analysis/artifacts/github-desktop.md",
+  "sourceSummary": "artifacts/github-desktop.md",
   "verificationStatus": "Medium",
   "evidenceAvailable": [
     "summary markdown",
-    "patch diff: C:/Users/Brandon Caylor/github-desktop-src/github_desktop_fix.diff",
-    "focused code excerpt: C:/Users/Brandon Caylor/github-desktop-src/github_desktop_fix_zone.txt",
-    "analysis notes: C:/Users/Brandon Caylor/github-desktop-src/github_desktop_focus.txt",
-    "scan output: C:/Users/Brandon Caylor/github-desktop-src/github_desktop_race_scan.txt"
+    "patch diff: job_artifact/recovered_evidence/github-desktop/github_desktop_fix.diff",
+    "focused code excerpt: job_artifact/recovered_evidence/github-desktop/github_desktop_fix_zone.txt",
+    "analysis notes: job_artifact/recovered_evidence/github-desktop/github_desktop_focus.txt",
+    "scan output: job_artifact/recovered_evidence/github-desktop/github_desktop_race_scan.txt"
   ],
   "recoveredDirectEvidence": [
     "A clean local patch diff exists for app-store.ts.",
@@ -27,8 +27,8 @@
   ],
   "recoveredArtifacts": [
     {
-      "path": "C:/Users/Brandon Caylor/github-desktop-src/github_desktop_fix.diff",
-      "copiedTo": "C:/Users/Brandon Caylor/system-failure-analysis/job_artifact/recovered_evidence/github-desktop/github_desktop_fix.diff",
+      "path": "[local path redacted - recovered artifact copied into repo]",
+      "copiedTo": "job_artifact/recovered_evidence/github-desktop/github_desktop_fix.diff",
       "artifactType": "patch diff",
       "confidence": "high",
       "upgrades": [
@@ -39,8 +39,8 @@
       "summary": "Direct diff in app/src/lib/stores/app-store.ts adding selectedRepository freshness guards around post-checkout callbacks."
     },
     {
-      "path": "C:/Users/Brandon Caylor/github-desktop-src/github_desktop_fix_zone.txt",
-      "copiedTo": "C:/Users/Brandon Caylor/system-failure-analysis/job_artifact/recovered_evidence/github-desktop/github_desktop_fix_zone.txt",
+      "path": "[local path redacted - recovered artifact copied into repo]",
+      "copiedTo": "job_artifact/recovered_evidence/github-desktop/github_desktop_fix_zone.txt",
       "artifactType": "focused code excerpt",
       "confidence": "high",
       "upgrades": [
@@ -50,8 +50,8 @@
       "summary": "Focused excerpt of the guarded _checkoutBranch promise chain."
     },
     {
-      "path": "C:/Users/Brandon Caylor/github-desktop-src/github_desktop_focus.txt",
-      "copiedTo": "C:/Users/Brandon Caylor/system-failure-analysis/job_artifact/recovered_evidence/github-desktop/github_desktop_focus.txt",
+      "path": "[local path redacted - recovered artifact copied into repo]",
+      "copiedTo": "job_artifact/recovered_evidence/github-desktop/github_desktop_focus.txt",
       "artifactType": "analysis notes",
       "confidence": "medium",
       "upgrades": [
@@ -61,8 +61,8 @@
       "summary": "Focused notes around checkout state, repository selection, and affected control flow."
     },
     {
-      "path": "C:/Users/Brandon Caylor/github-desktop-src/github_desktop_race_scan.txt",
-      "copiedTo": "C:/Users/Brandon Caylor/system-failure-analysis/job_artifact/recovered_evidence/github-desktop/github_desktop_race_scan.txt",
+      "path": "[local path redacted - recovered artifact copied into repo]",
+      "copiedTo": "job_artifact/recovered_evidence/github-desktop/github_desktop_race_scan.txt",
       "artifactType": "scan output",
       "confidence": "medium",
       "upgrades": [

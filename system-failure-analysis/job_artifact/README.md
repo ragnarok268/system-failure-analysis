@@ -25,12 +25,12 @@ Where raw evidence is missing, the case includes an `evidence_needed.md` checkli
 
 ## Package Layout
 
-- [PORTFOLIO_SUMMARY.md](C:\Users\Brandon Caylor\system-failure-analysis\job_artifact\PORTFOLIO_SUMMARY.md)
-- [CASE_INDEX.md](C:\Users\Brandon Caylor\system-failure-analysis\job_artifact\CASE_INDEX.md)
-- [ARTIFACT_VERIFICATION_STATUS.md](C:\Users\Brandon Caylor\system-failure-analysis\job_artifact\ARTIFACT_VERIFICATION_STATUS.md)
-- [cases](C:\Users\Brandon Caylor\system-failure-analysis\job_artifact\cases)
-- [scripts](C:\Users\Brandon Caylor\system-failure-analysis\job_artifact\scripts)
-- [receipts](C:\Users\Brandon Caylor\system-failure-analysis\job_artifact\receipts)
+- [PORTFOLIO_SUMMARY.md](./PORTFOLIO_SUMMARY.md)
+- [CASE_INDEX.md](./CASE_INDEX.md)
+- [ARTIFACT_VERIFICATION_STATUS.md](./ARTIFACT_VERIFICATION_STATUS.md)
+- [cases](./cases/)
+- [scripts](./scripts/)
+- [receipts](./receipts/)
 
 ## Positioning
 

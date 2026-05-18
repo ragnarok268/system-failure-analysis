@@ -4,8 +4,8 @@ This report records locally recovered evidence artifacts that were used to upgra
 
 ## Scope
 
-- Search root: C:/Users/Brandon Caylor
-- Portfolio target: C:/Users/Brandon Caylor/system-failure-analysis/job_artifact
+- Search root: [local path redacted — recovery performed on local workstation]
+- Portfolio target: job_artifact/
 - Cases upgraded: Dolibarr, GitHub Desktop, Langflow, n8n, Open WebUI
 
 ## Recovery Summary
@@ -38,36 +38,36 @@ This report records locally recovered evidence artifacts that were used to upgra
 
 ### Recovered Artifacts
 
-- Artifact: C:/Users/Brandon Caylor/Desktop/git/dolibarr/patch_final.txt
+- Artifact: [local path redacted — recovered artifact copied into repo]
   Type: patch diff
   Confidence: high
   Upgrades: proof quality, reproducibility, interview credibility
-  Copied to: C:/Users/Brandon Caylor/system-failure-analysis/job_artifact/recovered_evidence/dolibarr/patch_final.txt
-- Artifact: C:/Users/Brandon Caylor/Desktop/git/dolibarr/stripe_block.txt
+  Copied to: job_artifact/recovered_evidence/dolibarr/patch_final.txt
+- Artifact: [local path redacted — recovered artifact copied into repo]
   Type: focused code trace
   Confidence: high
   Upgrades: proof quality, interview credibility
-  Copied to: C:/Users/Brandon Caylor/system-failure-analysis/job_artifact/recovered_evidence/dolibarr/stripe_block.txt
-- Artifact: C:/Users/Brandon Caylor/Desktop/git/dolibarr/order_payment_block.txt
+  Copied to: job_artifact/recovered_evidence/dolibarr/stripe_block.txt
+- Artifact: [local path redacted — recovered artifact copied into repo]
   Type: focused code trace
   Confidence: high
   Upgrades: proof quality, reproducibility, interview credibility
-  Copied to: C:/Users/Brandon Caylor/system-failure-analysis/job_artifact/recovered_evidence/dolibarr/order_payment_block.txt
-- Artifact: C:/Users/Brandon Caylor/Desktop/git/dolibarr/routing_block.txt
+  Copied to: job_artifact/recovered_evidence/dolibarr/order_payment_block.txt
+- Artifact: [local path redacted — recovered artifact copied into repo]
   Type: focused code trace
   Confidence: high
   Upgrades: proof quality, reproducibility
-  Copied to: C:/Users/Brandon Caylor/system-failure-analysis/job_artifact/recovered_evidence/dolibarr/routing_block.txt
-- Artifact: C:/Users/Brandon Caylor/Desktop/git/dolibarr/session_trace.txt
+  Copied to: job_artifact/recovered_evidence/dolibarr/routing_block.txt
+- Artifact: [local path redacted — recovered artifact copied into repo]
   Type: trace notes
   Confidence: medium
   Upgrades: reproducibility, interview credibility
-  Copied to: C:/Users/Brandon Caylor/system-failure-analysis/job_artifact/recovered_evidence/dolibarr/session_trace.txt
-- Artifact: C:/Users/Brandon Caylor/Desktop/git/dolibarr/newpayment_path.txt
+  Copied to: job_artifact/recovered_evidence/dolibarr/session_trace.txt
+- Artifact: [local path redacted — recovered artifact copied into repo]
   Type: path reference
   Confidence: medium
   Upgrades: reproducibility
-  Copied to: C:/Users/Brandon Caylor/system-failure-analysis/job_artifact/recovered_evidence/dolibarr/newpayment_path.txt
+  Copied to: job_artifact/recovered_evidence/dolibarr/newpayment_path.txt
 
 ## GitHub Desktop
 
@@ -91,26 +91,26 @@ This report records locally recovered evidence artifacts that were used to upgra
 
 ### Recovered Artifacts
 
-- Artifact: C:/Users/Brandon Caylor/github-desktop-src/github_desktop_fix.diff
+- Artifact: [local path redacted — recovered artifact copied into repo]
   Type: patch diff
   Confidence: high
   Upgrades: proof quality, reproducibility, interview credibility
-  Copied to: C:/Users/Brandon Caylor/system-failure-analysis/job_artifact/recovered_evidence/github-desktop/github_desktop_fix.diff
-- Artifact: C:/Users/Brandon Caylor/github-desktop-src/github_desktop_fix_zone.txt
+  Copied to: job_artifact/recovered_evidence/github-desktop/github_desktop_fix.diff
+- Artifact: [local path redacted — recovered artifact copied into repo]
   Type: focused code excerpt
   Confidence: high
   Upgrades: proof quality, interview credibility
-  Copied to: C:/Users/Brandon Caylor/system-failure-analysis/job_artifact/recovered_evidence/github-desktop/github_desktop_fix_zone.txt
-- Artifact: C:/Users/Brandon Caylor/github-desktop-src/github_desktop_focus.txt
+  Copied to: job_artifact/recovered_evidence/github-desktop/github_desktop_fix_zone.txt
+- Artifact: [local path redacted — recovered artifact copied into repo]
   Type: analysis notes
   Confidence: medium
   Upgrades: reproducibility, interview credibility
-  Copied to: C:/Users/Brandon Caylor/system-failure-analysis/job_artifact/recovered_evidence/github-desktop/github_desktop_focus.txt
-- Artifact: C:/Users/Brandon Caylor/github-desktop-src/github_desktop_race_scan.txt
+  Copied to: job_artifact/recovered_evidence/github-desktop/github_desktop_focus.txt
+- Artifact: [local path redacted — recovered artifact copied into repo]
   Type: scan output
   Confidence: medium
   Upgrades: reproducibility
-  Copied to: C:/Users/Brandon Caylor/system-failure-analysis/job_artifact/recovered_evidence/github-desktop/github_desktop_race_scan.txt
+  Copied to: job_artifact/recovered_evidence/github-desktop/github_desktop_race_scan.txt
 
 ## Langflow
 
@@ -133,16 +133,16 @@ This report records locally recovered evidence artifacts that were used to upgra
 
 ### Recovered Artifacts
 
-- Artifact: C:/Users/Brandon Caylor/langflow/langflow_fix.diff
+- Artifact: [local path redacted — recovered artifact copied into repo]
   Type: patch diff
   Confidence: high
   Upgrades: proof quality, reproducibility, interview credibility
-  Copied to: C:/Users/Brandon Caylor/system-failure-analysis/job_artifact/recovered_evidence/langflow/langflow_fix.diff
-- Artifact: C:/Users/Brandon Caylor/langflow/langflow_fix_zone.txt
+  Copied to: job_artifact/recovered_evidence/langflow/langflow_fix.diff
+- Artifact: [local path redacted — recovered artifact copied into repo]
   Type: focused code excerpt
   Confidence: high
   Upgrades: proof quality
-  Copied to: C:/Users/Brandon Caylor/system-failure-analysis/job_artifact/recovered_evidence/langflow/langflow_fix_zone.txt
+  Copied to: job_artifact/recovered_evidence/langflow/langflow_fix_zone.txt
 
 ## n8n
 
@@ -166,26 +166,26 @@ This report records locally recovered evidence artifacts that were used to upgra
 
 ### Recovered Artifacts
 
-- Artifact: C:/Users/Brandon Caylor/n8n/n8n_fix.diff
+- Artifact: [local path redacted — recovered artifact copied into repo]
   Type: patch diff
   Confidence: high
   Upgrades: proof quality, reproducibility, interview credibility
-  Copied to: C:/Users/Brandon Caylor/system-failure-analysis/job_artifact/recovered_evidence/n8n/n8n_fix.diff
-- Artifact: C:/Users/Brandon Caylor/n8n/n8n_fix_zone.txt
+  Copied to: job_artifact/recovered_evidence/n8n/n8n_fix.diff
+- Artifact: [local path redacted — recovered artifact copied into repo]
   Type: focused code excerpt
   Confidence: high
   Upgrades: proof quality
-  Copied to: C:/Users/Brandon Caylor/system-failure-analysis/job_artifact/recovered_evidence/n8n/n8n_fix_zone.txt
-- Artifact: C:/Users/Brandon Caylor/n8n/n8n_patch_zone.txt
+  Copied to: job_artifact/recovered_evidence/n8n/n8n_fix_zone.txt
+- Artifact: [local path redacted — recovered artifact copied into repo]
   Type: context excerpt
   Confidence: medium
   Upgrades: reproducibility, interview credibility
-  Copied to: C:/Users/Brandon Caylor/system-failure-analysis/job_artifact/recovered_evidence/n8n/n8n_patch_zone.txt
-- Artifact: C:/Users/Brandon Caylor/n8n/n8n_targeted_path.txt
+  Copied to: job_artifact/recovered_evidence/n8n/n8n_patch_zone.txt
+- Artifact: [local path redacted — recovered artifact copied into repo]
   Type: path reference
   Confidence: medium
   Upgrades: reproducibility
-  Copied to: C:/Users/Brandon Caylor/system-failure-analysis/job_artifact/recovered_evidence/n8n/n8n_targeted_path.txt
+  Copied to: job_artifact/recovered_evidence/n8n/n8n_targeted_path.txt
 
 ## Open WebUI
 
@@ -209,25 +209,24 @@ This report records locally recovered evidence artifacts that were used to upgra
 
 ### Recovered Artifacts
 
-- Artifact: C:/Users/Brandon Caylor/open-webui/webui_fix_zone_after.txt
+- Artifact: [local path redacted — recovered artifact copied into repo]
   Type: focused after-state excerpt
   Confidence: high
   Upgrades: proof quality, interview credibility
-  Copied to: C:/Users/Brandon Caylor/system-failure-analysis/job_artifact/recovered_evidence/open-webui/webui_fix_zone_after.txt
-- Artifact: C:/Users/Brandon Caylor/open-webui/webui_fix_zone.txt
+  Copied to: job_artifact/recovered_evidence/open-webui/webui_fix_zone_after.txt
+- Artifact: [local path redacted — recovered artifact copied into repo]
   Type: focused code excerpt
   Confidence: medium
   Upgrades: proof quality, reproducibility
-  Copied to: C:/Users/Brandon Caylor/system-failure-analysis/job_artifact/recovered_evidence/open-webui/webui_fix_zone.txt
-- Artifact: C:/Users/Brandon Caylor/open-webui/webui_fix.diff
+  Copied to: job_artifact/recovered_evidence/open-webui/webui_fix_zone.txt
+- Artifact: [local path redacted — recovered artifact copied into repo]
   Type: patch diff
   Confidence: medium
   Upgrades: proof quality, reproducibility
-  Copied to: C:/Users/Brandon Caylor/system-failure-analysis/job_artifact/recovered_evidence/open-webui/webui_fix.diff
+  Copied to: job_artifact/recovered_evidence/open-webui/webui_fix.diff
 
 ## Audit Notes
 
 - Diff files count as direct code-change evidence when they are clean and locally recoverable.
 - Focused code excerpts and trace bundles improve traceability and reproducibility, but they do not by themselves prove runtime verification.
 - Open WebUI recovered a meaningful fix hunk, but the broader diff file appears malformed, so only the focused append-vs-overwrite behavior is treated as directly supported.
-
