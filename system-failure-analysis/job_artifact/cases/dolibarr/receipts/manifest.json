@@ -1,0 +1,100 @@
+{
+  "caseSlug": "dolibarr",
+  "system": "Dolibarr / Stripe",
+  "sourceSummary": "C:/Users/Brandon Caylor/system-failure-analysis/artifacts/dolibarr.md",
+  "verificationStatus": "Medium",
+  "evidenceAvailable": [
+    "summary markdown",
+    "patch diff: C:/Users/Brandon Caylor/Desktop/git/dolibarr/patch_final.txt",
+    "focused code trace: C:/Users/Brandon Caylor/Desktop/git/dolibarr/stripe_block.txt",
+    "focused code trace: C:/Users/Brandon Caylor/Desktop/git/dolibarr/order_payment_block.txt",
+    "focused code trace: C:/Users/Brandon Caylor/Desktop/git/dolibarr/routing_block.txt",
+    "trace notes: C:/Users/Brandon Caylor/Desktop/git/dolibarr/session_trace.txt",
+    "path reference: C:/Users/Brandon Caylor/Desktop/git/dolibarr/newpayment_path.txt"
+  ],
+  "recoveredDirectEvidence": [
+    "A clean local patch diff exists for paymentok.php.",
+    "Focused local excerpts exist for Stripe verification, routing/session recovery, and payment creation.",
+    "A local trace note file links the callback flow through the affected variables."
+  ],
+  "inferredReconstruction": [
+    "The reconstructed failure likely involved a valid Stripe payment with missing or mismatched callback session state.",
+    "The duplicate-payment guard was added to make the recovery path safe under retry or re-entry."
+  ],
+  "evidenceMissing": [
+    "failing transaction log",
+    "passing transaction log",
+    "exact reproduction command",
+    "screenshot of before/after invoice state",
+    "upstream issue or PR link"
+  ],
+  "recoveredArtifacts": [
+    {
+      "path": "C:/Users/Brandon Caylor/Desktop/git/dolibarr/patch_final.txt",
+      "copiedTo": "C:/Users/Brandon Caylor/system-failure-analysis/job_artifact/recovered_evidence/dolibarr/patch_final.txt",
+      "artifactType": "patch diff",
+      "confidence": "high",
+      "upgrades": [
+        "proof quality",
+        "reproducibility",
+        "interview credibility"
+      ],
+      "summary": "Direct diff in htdocs/public/payment/paymentok.php showing session-mismatch recovery, Stripe-backed field recovery, and duplicate-payment idempotency guard."
+    },
+    {
+      "path": "C:/Users/Brandon Caylor/Desktop/git/dolibarr/stripe_block.txt",
+      "copiedTo": "C:/Users/Brandon Caylor/system-failure-analysis/job_artifact/recovered_evidence/dolibarr/stripe_block.txt",
+      "artifactType": "focused code trace",
+      "confidence": "high",
+      "upgrades": [
+        "proof quality",
+        "interview credibility"
+      ],
+      "summary": "Focused Stripe verification block showing PaymentIntent retrieval and amount/currency comparison."
+    },
+    {
+      "path": "C:/Users/Brandon Caylor/Desktop/git/dolibarr/order_payment_block.txt",
+      "copiedTo": "C:/Users/Brandon Caylor/system-failure-analysis/job_artifact/recovered_evidence/dolibarr/order_payment_block.txt",
+      "artifactType": "focused code trace",
+      "confidence": "high",
+      "upgrades": [
+        "proof quality",
+        "reproducibility",
+        "interview credibility"
+      ],
+      "summary": "Focused order-payment block showing invoice creation, Paiement creation, and ext_payment_id usage."
+    },
+    {
+      "path": "C:/Users/Brandon Caylor/Desktop/git/dolibarr/routing_block.txt",
+      "copiedTo": "C:/Users/Brandon Caylor/system-failure-analysis/job_artifact/recovered_evidence/dolibarr/routing_block.txt",
+      "artifactType": "focused code trace",
+      "confidence": "high",
+      "upgrades": [
+        "proof quality",
+        "reproducibility"
+      ],
+      "summary": "Focused routing/session block showing fallback reads from session and payment_intent parsing."
+    },
+    {
+      "path": "C:/Users/Brandon Caylor/Desktop/git/dolibarr/session_trace.txt",
+      "copiedTo": "C:/Users/Brandon Caylor/system-failure-analysis/job_artifact/recovered_evidence/dolibarr/session_trace.txt",
+      "artifactType": "trace notes",
+      "confidence": "medium",
+      "upgrades": [
+        "reproducibility",
+        "interview credibility"
+      ],
+      "summary": "Trace notes linking the callback flow to FinalPaymentAmt and TRANSACTIONID handling."
+    },
+    {
+      "path": "C:/Users/Brandon Caylor/Desktop/git/dolibarr/newpayment_path.txt",
+      "copiedTo": "C:/Users/Brandon Caylor/system-failure-analysis/job_artifact/recovered_evidence/dolibarr/newpayment_path.txt",
+      "artifactType": "path reference",
+      "confidence": "medium",
+      "upgrades": [
+        "reproducibility"
+      ],
+      "summary": "Path reference for the newpayment entrypoint used in the payment flow."
+    }
+  ]
+}

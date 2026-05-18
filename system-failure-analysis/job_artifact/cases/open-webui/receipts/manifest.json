@@ -1,0 +1,62 @@
+{
+  "caseSlug": "open-webui",
+  "system": "Open WebUI",
+  "sourceSummary": "C:/Users/Brandon Caylor/system-failure-analysis/artifacts/open-webui.md",
+  "verificationStatus": "Medium",
+  "evidenceAvailable": [
+    "summary markdown",
+    "focused after-state excerpt: C:/Users/Brandon Caylor/open-webui/webui_fix_zone_after.txt",
+    "focused code excerpt: C:/Users/Brandon Caylor/open-webui/webui_fix_zone.txt",
+    "patch diff: C:/Users/Brandon Caylor/open-webui/webui_fix.diff"
+  ],
+  "recoveredDirectEvidence": [
+    "A focused local after-state excerpt shows the append-based reasoning-content update.",
+    "A local diff file contains the same key hunk, though the surrounding diff appears malformed."
+  ],
+  "inferredReconstruction": [
+    "The user-visible symptom was likely truncated or overwritten reasoning output during multi-update streaming.",
+    "The broader patch may have included additional cleanup, but only the focused overwrite-to-append behavior is safe to claim from the recovered files."
+  ],
+  "evidenceMissing": [
+    "streaming transcript or log",
+    "passing verification output",
+    "exact reproduction prompt/command",
+    "clean upstream diff or PR link",
+    "before/after screenshot or capture"
+  ],
+  "recoveredArtifacts": [
+    {
+      "path": "C:/Users/Brandon Caylor/open-webui/webui_fix_zone_after.txt",
+      "copiedTo": "C:/Users/Brandon Caylor/system-failure-analysis/job_artifact/recovered_evidence/open-webui/webui_fix_zone_after.txt",
+      "artifactType": "focused after-state excerpt",
+      "confidence": "high",
+      "upgrades": [
+        "proof quality",
+        "interview credibility"
+      ],
+      "summary": "Focused excerpt showing reasoning_item content initialization and append-based update in middleware.py."
+    },
+    {
+      "path": "C:/Users/Brandon Caylor/open-webui/webui_fix_zone.txt",
+      "copiedTo": "C:/Users/Brandon Caylor/system-failure-analysis/job_artifact/recovered_evidence/open-webui/webui_fix_zone.txt",
+      "artifactType": "focused code excerpt",
+      "confidence": "medium",
+      "upgrades": [
+        "proof quality",
+        "reproducibility"
+      ],
+      "summary": "Additional focused context around the reasoning-content mutation path."
+    },
+    {
+      "path": "C:/Users/Brandon Caylor/open-webui/webui_fix.diff",
+      "copiedTo": "C:/Users/Brandon Caylor/system-failure-analysis/job_artifact/recovered_evidence/open-webui/webui_fix.diff",
+      "artifactType": "patch diff",
+      "confidence": "medium",
+      "upgrades": [
+        "proof quality",
+        "reproducibility"
+      ],
+      "summary": "Patch file containing the key overwrite-to-append change, but the broader diff formatting appears damaged and should not be treated as a clean complete patch artifact."
+    }
+  ]
+}

@@ -1,58 +1,45 @@
 # System Failure Analysis
 
-Real-world diagnostics and fixes across multiple system layers:
-UI, execution, dependency, time, and external truth.
+Evidence-backed forensic debugging case studies across real open-source systems.
 
----
+## What This Demonstrates
 
-## What I do
+- root-cause analysis
+- failure classification
+- minimal patch reasoning
+- evidence recovery
+- verification discipline
 
-I identify where systems diverge from reality (state, time, dependency, or external truth), isolate the failure boundary, and apply minimal corrections.
+## Start Here
 
----
+- [CASE_INDEX.md](./job_artifact/CASE_INDEX.md)
+- [PORTFOLIO_SUMMARY.md](./job_artifact/PORTFOLIO_SUMMARY.md)
+- [ARTIFACT_VERIFICATION_STATUS.md](./job_artifact/ARTIFACT_VERIFICATION_STATUS.md)
+- [EVIDENCE_RECOVERY_REPORT.md](./job_artifact/EVIDENCE_RECOVERY_REPORT.md)
 
-## Artifacts
+## Original Summaries
 
-### 1. Dolibarr — External Truth Failure
-Stripe confirmed payment rejected due to session dependency.  
-→ [View Analysis](./artifacts/dolibarr.md)
+- [artifacts/](./artifacts/)
 
----
+## Cases
 
-### 2. n8n — UI Truth Failure
-Frontend validation incorrectly reported missing credentials.  
-→ [View Analysis](./artifacts/n8n.md)
+- [Dolibarr](./job_artifact/cases/dolibarr/) - External/Internal Truth Failure
+- [n8n](./job_artifact/cases/n8n/) - UI Truth Failure
+- [Open WebUI](./job_artifact/cases/open-webui/) - Execution State Corruption
+- [Langflow](./job_artifact/cases/langflow/) - Dependency Truth Drift
+- [GitHub Desktop](./job_artifact/cases/github-desktop/) - Time/Async State Failure
 
----
+## Evidence Status
 
-### 3. Open WebUI — Execution State Corruption
-Streaming output corrupted due to improper state handling.  
-→ [View Analysis](./artifacts/open-webui.md)
+This repository separates:
 
----
+- direct recovered evidence
+- reconstructed analysis
+- missing runtime/test transcripts
 
-### 4. Langflow — Dependency Truth Drift
-Declared dependency range allowed incompatible runtime behavior.  
-→ [View Analysis](./artifacts/langflow.md)
+The portfolio avoids claiming merged upstream fixes, production access, or successful test execution unless the artifact package contains the supporting transcript.
 
----
+## Positioning
 
-### 5. GitHub Desktop — Time / Async State Failure
-Stale async results overwrote current system state.  
-→ [View Analysis](./artifacts/github-desktop.md)
+This portfolio is aimed at runtime reliability, AI infrastructure, platform engineering, observability, and Codex-style engineering roles.
 
----
-
-## Coverage
-
-- External ↔ Internal truth reconciliation  
-- UI vs execution mismatch  
-- Streaming/state integrity  
-- Dependency/version correctness  
-- Async/time correctness  
-
----
-
-## Availability
-
-Available for system diagnostics, failure analysis, and reliability improvements.

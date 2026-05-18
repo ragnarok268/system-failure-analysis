@@ -1,0 +1,14 @@
+{
+  "generatedFrom": [
+    "C:/Users/Brandon Caylor/system-failure-analysis/artifacts/dolibarr.md",
+    "C:/Users/Brandon Caylor/system-failure-analysis/artifacts/github-desktop.md",
+    "C:/Users/Brandon Caylor/system-failure-analysis/artifacts/langflow.md",
+    "C:/Users/Brandon Caylor/system-failure-analysis/artifacts/n8n.md",
+    "C:/Users/Brandon Caylor/system-failure-analysis/artifacts/open-webui.md",
+    "C:/Users/Brandon Caylor/system-failure-analysis/README.md"
+  ],
+  "notes": [
+    "No local raw logs, patch diffs, screenshots, or test transcripts were found during package generation.",
+    "Case documents are intentionally bounded to the evidence present in repository summaries."
+  ]
+}

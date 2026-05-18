@@ -1,0 +1,15 @@
+      // We always want to end with refreshing the repository regardless of
+      // whether the checkout succeeded or not in order to present the most
+      // up-to-date information to the user.
+      return this.checkoutImplementation(repository, branch, strategy)
+        .then(() => {
+          if (this.selectedRepository !== repository) return
+          return this.onSuccessfulCheckout(repository, branch)
+        })
+        .catch(e => this.emitError(new CheckoutError(e, repository, branch)))
+        .then(() => {
+          if (this.selectedRepository !== repository) return
+          return this.refreshAfterCheckout(repository, branch.name)
+        })
+        .finally(() => this.updateCheckoutProgress(repository, null))
+    })

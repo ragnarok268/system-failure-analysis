@@ -1,0 +1,73 @@
+{
+  "caseSlug": "n8n",
+  "system": "n8n",
+  "sourceSummary": "C:/Users/Brandon Caylor/system-failure-analysis/artifacts/n8n.md",
+  "verificationStatus": "Medium",
+  "evidenceAvailable": [
+    "summary markdown",
+    "patch diff: C:/Users/Brandon Caylor/n8n/n8n_fix.diff",
+    "focused code excerpt: C:/Users/Brandon Caylor/n8n/n8n_fix_zone.txt",
+    "context excerpt: C:/Users/Brandon Caylor/n8n/n8n_patch_zone.txt",
+    "path reference: C:/Users/Brandon Caylor/n8n/n8n_targeted_path.txt"
+  ],
+  "recoveredDirectEvidence": [
+    "A clean local patch diff exists for selectedCredsAreUnusable in useNodeHelpers.ts.",
+    "A focused fix-zone excerpt confirms the new acceptance of string credentials and object credentials with id/name."
+  ],
+  "inferredReconstruction": [
+    "The original false warning likely occurred when credentials were represented in a valid but previously unrecognized shape.",
+    "A nearby Playwright regression path exists, but no local artifact proves it was executed for this recovery pass."
+  ],
+  "evidenceMissing": [
+    "failing UI screenshot",
+    "passing UI screenshot",
+    "execution log",
+    "executed test transcript",
+    "upstream issue or PR link"
+  ],
+  "recoveredArtifacts": [
+    {
+      "path": "C:/Users/Brandon Caylor/n8n/n8n_fix.diff",
+      "copiedTo": "C:/Users/Brandon Caylor/system-failure-analysis/job_artifact/recovered_evidence/n8n/n8n_fix.diff",
+      "artifactType": "patch diff",
+      "confidence": "high",
+      "upgrades": [
+        "proof quality",
+        "reproducibility",
+        "interview credibility"
+      ],
+      "summary": "Direct diff in useNodeHelpers.ts rewriting selectedCredsAreUnusable to inspect actual credential payloads."
+    },
+    {
+      "path": "C:/Users/Brandon Caylor/n8n/n8n_fix_zone.txt",
+      "copiedTo": "C:/Users/Brandon Caylor/system-failure-analysis/job_artifact/recovered_evidence/n8n/n8n_fix_zone.txt",
+      "artifactType": "focused code excerpt",
+      "confidence": "high",
+      "upgrades": [
+        "proof quality"
+      ],
+      "summary": "Focused excerpt of the changed selectedCredsAreUnusable helper."
+    },
+    {
+      "path": "C:/Users/Brandon Caylor/n8n/n8n_patch_zone.txt",
+      "copiedTo": "C:/Users/Brandon Caylor/system-failure-analysis/job_artifact/recovered_evidence/n8n/n8n_patch_zone.txt",
+      "artifactType": "context excerpt",
+      "confidence": "medium",
+      "upgrades": [
+        "reproducibility",
+        "interview credibility"
+      ],
+      "summary": "Wider helper context showing how credential issues are computed around the changed function."
+    },
+    {
+      "path": "C:/Users/Brandon Caylor/n8n/n8n_targeted_path.txt",
+      "copiedTo": "C:/Users/Brandon Caylor/system-failure-analysis/job_artifact/recovered_evidence/n8n/n8n_targeted_path.txt",
+      "artifactType": "path reference",
+      "confidence": "medium",
+      "upgrades": [
+        "reproducibility"
+      ],
+      "summary": "Path reference to the affected useNodeHelpers.ts file."
+    }
+  ]
+}

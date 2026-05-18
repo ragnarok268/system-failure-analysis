@@ -1,0 +1,20 @@
+﻿Langflow patch zone
+File: src\backend\base\pyproject.toml
+Generated: 2026-04-02 11:16:37
+
+> src\backend\base\pyproject.toml:1:[project]
+  src\backend\base\pyproject.toml:2:name = "langflow-base"
+  src\backend\base\pyproject.toml:3:version = "0.8.1"
+  src\backend\base\pyproject.toml:12:    { name = "Gabriel Almeida", email = "gabriel@langflow.org" },
+  src\backend\base\pyproject.toml:13:    { name = "Lucas Eduoli", email = "lucaseduoli@gmail.com" },
+> src\backend\base\pyproject.toml:14:    { name = "Otávio Anovazzi", email = "otavio2204@gmail.com" },
+  src\backend\base\pyproject.toml:15:    { name = "Rodrigo Nader", email = "rodrigo@langflow.org" },
+  src\backend\base\pyproject.toml:16:    { name = "Italo dos Anjos", email = "italojohnnydosanjos@gmail.com" },
+  src\backend\base\pyproject.toml:202:weaviate = ["weaviate-client>=4.10.2,<5.0.0"]
+  src\backend\base\pyproject.toml:203:chroma = [
+> src\backend\base\pyproject.toml:204:    "chromadb>=1.4.1,<2.0.0",
+  src\backend\base\pyproject.toml:205:    "langchain-chroma>=0.1.4,<1.0.0"
+  src\backend\base\pyproject.toml:206:]
+
+
+
